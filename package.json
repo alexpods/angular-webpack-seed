@@ -4,7 +4,9 @@
   "description": "Project seed for angular.js using Webpack as a module bundler",
   "scripts": {
     "webpack": "webpack",
-    "dev-server": "webpack-dev-server"
+    "build": "npm run webpack",
+    "dev-server": "webpack-dev-server",
+    "start": "npm run dev-server"
   },
   "repository": {
     "type": "git",
