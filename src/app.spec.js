@@ -1,12 +1,12 @@
-import { MyAppDirective } from './app';
+import { AppDirective } from './app';
 
 describe('"app" module', () => {
 
-  describe('MyAppDirective', () => {
+  describe('AppDirective', () => {
     let directive;
 
     beforeEach(() => {
-      directive = MyAppDirective();
+      directive = AppDirective();
     });
 
     it('should work', () => {

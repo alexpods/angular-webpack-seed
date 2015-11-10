@@ -3,10 +3,13 @@
   "version": "0.0.0",
   "description": "Project seed for angular.js using Webpack as a module bundler",
   "scripts": {
-    "webpack": "webpack",
-    "build": "npm run webpack",
-    "dev-server": "webpack-dev-server",
-    "test": "karma start",
+    "webdriver-manager": "webdriver-manager",
+    "webdriver": "npm run webdriver-manager update && npm run webdriver-manager start",
+    "dev-server": "webpack-dev-server --config tools/webpack.config.js",
+    "build": "webpack --config tools/webpack.config.js",
+    "unit": "karma start tools/karma.conf.js",
+    "e2e": "protractor tools/protractor.conf.js",
+    "test": "karma start tools/karma.conf.js --single-run && npm run e2e",
     "start": "npm run dev-server"
   },
   "repository": {
@@ -38,6 +41,7 @@
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-webpack": "^1.7.0",
     "phantomjs": "^1.9.18",
+    "protractor": "^2.5.1",
     "webpack": "^1.12.3",
     "webpack-dev-server": "^1.12.1"
   }

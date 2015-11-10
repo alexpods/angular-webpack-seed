@@ -3,7 +3,7 @@
 
 module.exports = function(config) {
   config.set({
-    basePath: '',
+    basePath: __dirname + '/..',
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

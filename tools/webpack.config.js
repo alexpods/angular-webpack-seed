@@ -1,6 +1,8 @@
+var path = require('path');
+
 module.exports = {
   target: 'web',
-  context: __dirname,
+  context: path.join(__dirname, '..'),
 
   devServer: {
     contentBase: './public'

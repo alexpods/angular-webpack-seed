@@ -1,11 +1,11 @@
 import { module } from 'angular';
 
-export const MyAppDirective = () => ({
+export const AppDirective = () => ({
   restrict: 'E',
   template: `
-    <b>Hello World</b>
+    <b>Hello, World!</b>
   `
 });
 
 export const app = module('app', [])
-  .directive('myApp', MyAppDirective);
+  .directive('app', AppDirective);
