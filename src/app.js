@@ -1,6 +1,6 @@
 import { module } from 'angular';
 
-const MyAppDirective = () => ({
+export const MyAppDirective = () => ({
   restrict: 'E',
   template: `
     <b>Hello World</b>

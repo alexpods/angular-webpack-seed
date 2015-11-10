@@ -6,7 +6,7 @@ module.exports = {
     contentBase: './public'
   },
 
-  entry: './src/index.js',
+  entry: './src/bootstrap.js',
 
   output: {
     path: './public',
