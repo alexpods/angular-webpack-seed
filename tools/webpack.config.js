@@ -3,6 +3,7 @@ var path = require('path');
 module.exports = {
   target: 'web',
   context: path.join(__dirname, '..'),
+  devtool: 'inline-source-map',
 
   devServer: {
     contentBase: './public'
